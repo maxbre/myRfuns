@@ -24,7 +24,7 @@ sect_to_degr<-function(vs){
           "WNW", "NW", "NNW")
 
   # define the lookup named vector
-  lkup_sect<-setNames(degr, sect)
+  lkup_sect<-stats::setNames(degr, sect)
 
   # lookup at the sectors
   vs<-lkup_sect[vs]
