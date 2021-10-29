@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' myangle<- '45  12    3.01'
+#' myangle<- "45  12    3.01"
 #' dms_to_dd(myangle)
 
 dms_to_dd <- function(s) {

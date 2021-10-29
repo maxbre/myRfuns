@@ -41,3 +41,6 @@ vignettes/*.pdf
 pkg_workflow.R
 
 myRfuns.Rproj
+.Rproj.user
+.Rdata
+.DS_Store

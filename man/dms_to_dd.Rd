@@ -16,6 +16,6 @@ a numeric vector in decimal degrees
 Degrees minutes seconds to decimal degrees
 }
 \examples{
-myangle<- '45  12    3.01'
+myangle<- "45  12    3.01"
 dms_to_dd(myangle)
 }

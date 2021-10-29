@@ -2,4 +2,5 @@
 
 export(degr_to_sect)
 export(dms_to_dd)
+export(get_mode)
 export(sect_to_degr)
