@@ -24,7 +24,7 @@ save_mapview_html<-function(my_mapview, string_filename_html){
 
   my_mapview
 
-}
+  }
 
 #' Create mapview object from aermod plt file, save results as html and png files
 #'
@@ -39,8 +39,6 @@ save_mapview_html<-function(my_mapview, string_filename_html){
 #' @export
 #'
 #' @examples \dontrun{}
-
-
 
 plot_aermod_map<-function(input_filename,
                           rows_to_skip_head,
@@ -101,4 +99,4 @@ plot_aermod_map<-function(input_filename,
 
   save_mapview_html(map_r, string_filename_html)
 
-}
+  }
