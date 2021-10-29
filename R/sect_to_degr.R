@@ -16,7 +16,7 @@ sect_to_degr<-function(vs){
   # degrees (the centre of the corrisponding sector)
   degr<-seq(0, 337.5 , by = 22.5)
 
-  # sectors (pay attention here it is a different vector than in the other function)
+  # sectors (pay attention here it is a different vector than in the function degr_to_sect)
   sect<-c("N",
           "NNE","NE", "ENE", "E",
           "ESE", "SE", "SSE", "S",
