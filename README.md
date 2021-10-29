@@ -1,2 +1,3 @@
 # myRfuns
-A collection of my handy R functions
+
+A collection of handy R functions

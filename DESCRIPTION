@@ -1,0 +1,11 @@
+Package: myRfuns
+Title: A collection of my handy R functions
+Version: 0.0.0.9000
+Authors@R: 
+    person("max", "bre", , "maxbre67@gmailcom", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Some R functions it happens I use quite often.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
