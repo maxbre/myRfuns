@@ -10,7 +10,5 @@ Caveat emptor: use it at your own risk.
 
 To install the package:
 
-library(devtools)
-
-install_github("maxbre/myRfuns")
+devtools::install_github("maxbre/myRfuns")
 
