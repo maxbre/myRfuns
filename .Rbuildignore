@@ -3,3 +3,4 @@
 pkg_workflow.R
 ^LICENSE\.md$
 old_refs/*
+^README\.Rmd$
