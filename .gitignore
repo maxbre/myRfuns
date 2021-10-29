@@ -44,3 +44,5 @@ myRfuns.Rproj
 .Rproj.user
 .Rdata
 .DS_Store
+
+/old_refs/*
