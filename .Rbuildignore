@@ -2,4 +2,4 @@
 ^\.Rproj\.user$
 pkg_workflow.R
 ^LICENSE\.md$
-old_refs\*
+old_refs/*
