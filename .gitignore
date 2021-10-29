@@ -45,4 +45,4 @@ myRfuns.Rproj
 .Rdata
 .DS_Store
 
-/old_refs/*
+old_refs/*
