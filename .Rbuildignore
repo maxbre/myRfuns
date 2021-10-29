@@ -1,5 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
-old_refs/*
 ^README\.Rmd$
+^old_refs$
