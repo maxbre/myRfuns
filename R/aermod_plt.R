@@ -37,6 +37,7 @@ plt_cols <- function (path,
 #' Import an AERMOD .PLT file as tabular data
 #'
 #' @param path (character) path to .PLT file
+#' @param cols a character vector to select and optionally rename columns of the PLT file
 #' @return an object of type tbl
 #' @export
 #' @examples \dontrun{}
