@@ -4,7 +4,6 @@
 #'
 #' @param path a string for the path of PLT fil
 #' @param cols a character vector to select and optionally rename columns of the PLT file
-#'
 #' @return a tibble, identical in structure to the return value of [readr::fwf_positions()]
 #'
 
@@ -39,9 +38,8 @@ plt_cols <- function (path,
 #' @param path (character) path to .PLT file
 #' @return an object of type tbl
 #' @export
-#'
 #' @examples \dontrun{}
-
+#' 
 
 read_plt_tbl<-function(path,
                        cols = c(X = "X", Y = "Y", CONC = "AVERAGE CONC", ID="NET ID")
