@@ -2,7 +2,7 @@
 % Please edit documentation in R/aermod_plt.R
 \name{read_plt_tbl}
 \alias{read_plt_tbl}
-\title{Import an AERMOD .PLT file as tabular data}
+\title{Import AERMOD.PLT file as tabular data}
 \usage{
 read_plt_tbl(
   path,
@@ -10,14 +10,17 @@ read_plt_tbl(
 )
 }
 \arguments{
-\item{path}{(character) path to .PLT file}
+\item{path}{a string for the path of PLT file}
+
+\item{cols}{a character vector to select and optionally rename columns of the PLT file}
 }
 \value{
 an object of type tbl
 }
 \description{
-Import an AERMOD .PLT file as tabular data
+Import AERMOD.PLT file as tabular data
 }
 \examples{
 \dontrun{}
+
 }

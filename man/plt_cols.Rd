@@ -11,9 +11,11 @@ plt_cols(
 )
 }
 \arguments{
-\item{path}{a string for the path of PLT fil}
+\item{path}{a string for the path of PLT file}
 
 \item{cols}{a character vector to select and optionally rename columns of the PLT file}
+
+\item{skip}{number of rows to skip}
 }
 \value{
 a tibble, identical in structure to the return value of \code{\link[readr:read_fwf]{readr::fwf_positions()}}

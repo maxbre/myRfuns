@@ -2,7 +2,7 @@
 #'
 #' Return a column specification for use with [readr::read_fwf()].
 #'
-#' @param path a string for the path of PLT fil
+#' @param path a string for the path of PLT file
 #' @param cols a character vector to select and optionally rename columns of the PLT file
 #' @param skip number of rows to skip
 #' @return a tibble, identical in structure to the return value of [readr::fwf_positions()]
@@ -34,9 +34,9 @@ plt_cols <- function (path,
   
   }
 
-#' Import an AERMOD .PLT file as tabular data
+#' Import AERMOD.PLT file as tabular data
 #'
-#' @param path (character) path to .PLT file
+#' @param path a string for the path of PLT file
 #' @param cols a character vector to select and optionally rename columns of the PLT file
 #' @return an object of type tbl
 #' @export
