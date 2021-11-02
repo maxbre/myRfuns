@@ -26,7 +26,7 @@ plt_cols <- function (path,
     readr::fwf_positions(
       header_fwf$begin[i],      # subset by position i
       header_fwf$end[i],        # subset by position i
-      col_names = names(cols))  # subset by position i
+      col_names = names(cols))  # set column names
 
   # return col position
   col_positions
