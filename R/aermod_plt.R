@@ -4,6 +4,7 @@
 #'
 #' @param path a string for the path of PLT fil
 #' @param cols a character vector to select and optionally rename columns of the PLT file
+#' @param skip number of rows to skip
 #' @return a tibble, identical in structure to the return value of [readr::fwf_positions()]
 #'
 
