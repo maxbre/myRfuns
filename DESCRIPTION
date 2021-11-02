@@ -17,4 +17,5 @@ Imports:
     raster,
     RColorBrewer,
     readr,
-    sp
+    sp,
+    vroom
