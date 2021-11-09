@@ -8,7 +8,7 @@
 #' @export
 #' @examples
 #' v<- c(NA, 19, 4, 5, 7, 29, 19, 29, 13, 25, 19, 19)
-#' get_mode(v)
+#' stat_get_mode(v)
 
 stat_get_mode <- function(v) {
 
