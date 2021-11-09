@@ -18,9 +18,9 @@ aermod_map_plt_raster(
 
 \item{rows_to_skip_head}{a number of rows to skip in the head of the aermod plt file}
 
-\item{rows_to_skip_tail}{a number of rows to skip in the tail of the aermod plt file, default = 0}
+\item{rows_to_skip_tail}{a number of rows to skip in the tail of the aermod plt file}
 
-\item{trans_factor}{a number, transformation factor for results, default = 1}
+\item{trans_factor}{a number, transformation factor for results}
 
 \item{name_of_map_layer}{a string}
 

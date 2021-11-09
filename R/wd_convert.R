@@ -1,15 +1,15 @@
-#' wind dir convert degrees to sectors
+#' wind_degr_to_sect
+#' 
+#' convert wind degrees to sectors
 #'
 #' @param vd a numeric vector of wind dir degrees
-#'
 #' @return a character vector of wind dir sectors
 #' @export
-#'
 #' @examples
 #' vd<-c(0, seq(11.25, (360-11.25), by = 22.5), 360)
-#' degr_to_sect(vd)
+#' wind_degr_to_sect(vd)
 
-degr_to_sect<-function(vd){
+wind_degr_to_sect<-function(vd){
 
   # vd as vector of degrees
 
@@ -36,18 +36,18 @@ degr_to_sect<-function(vd){
   as.character(vd)
 }
 
-#' wind dir convert sectors to degrees
+#' wind_sect_to_degr
 #'
+#' convert wind sectors to degrees
+#' 
 #' @param vs a character vector of wind dir sectors
-#'
 #' @return a numeric vector of wind dir degrees
 #' @export
-#'
 #' @examples
 #' vs<-c("N","NNE","NE", "E", "ESE", "SE", "SSE", "S", "W", "WNW", "NW", "NNW")
-#' sect_to_degr(vs)
+#' wind_sect_to_degr(vs)
 
-sect_to_degr<-function(vs){
+wind_sect_to_degr<-function(vs){
 
   # vs vector of sectors
 
