@@ -2,6 +2,8 @@
 
 export(C_convert)
 export(F_convert)
+export(aermod_map_plt_raster)
+export(aermod_read_plt)
 export(degr_to_sect)
 export(dms_to_dd)
 export(get_mode)
