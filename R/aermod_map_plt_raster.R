@@ -34,10 +34,8 @@ save_mapview_html<-function(my_mapview, string_filename_html){
 #' @param trans_factor a number, transformation factor for results
 #' @param name_of_map_layer a string
 #' @param string_filename_html a string
-#'
 #' @return a map in the form html and png
 #' @export
-#'
 #' @examples \dontrun{}
 
 aermod_map_plt_raster<-function(input_filename,
