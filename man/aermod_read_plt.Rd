@@ -21,6 +21,8 @@ an object of type table
 Return a table of the output file AERMOD.PLT
 }
 \examples{
-\dontrun{}
+\dontrun{
+aermod_read_plt('./AERMOD.PLT')
+}
 
 }

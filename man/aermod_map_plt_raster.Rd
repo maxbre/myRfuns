@@ -33,5 +33,7 @@ a map in the form html and png
 Create mapview object from aermod plt file, save results as html and png files
 }
 \examples{
-\dontrun{}
+\dontrun{
+aermod_map_plt_raster('AERMOD.PLT')
+}
 }

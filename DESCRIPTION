@@ -18,4 +18,8 @@ Imports:
     RColorBrewer,
     readr,
     sp,
-    vroom
+    vroom,
+    devtools,
+    glue,
+    purrr,
+    stringr

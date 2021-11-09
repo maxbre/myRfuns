@@ -36,7 +36,9 @@ save_mapview_html<-function(my_mapview, string_filename_html){
 #' @param string_filename_html a string
 #' @return a map in the form html and png
 #' @export
-#' @examples \dontrun{}
+#' @examples \dontrun{
+#' aermod_map_plt_raster('AERMOD.PLT')
+#' }
 
 aermod_map_plt_raster<-function(input_filename,
                           rows_to_skip_head,

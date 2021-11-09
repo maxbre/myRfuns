@@ -42,7 +42,9 @@ plt_cols <- function (path,
 #' @param cols a character vector to select and optionally rename columns of the PLT file
 #' @return an object of type table
 #' @export
-#' @examples \dontrun{}
+#' @examples \dontrun{
+#' aermod_read_plt('./AERMOD.PLT')
+#' }
 #' 
 
 aermod_read_plt<-function(path,
