@@ -1,9 +1,8 @@
 Package: myRfuns
 Title: A collection of my handy R functions
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
-    person("massimo", "bressan", , "massimo.bressan@arpa.veneto.it", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("massimo", "bressan", , "massimo.bressan@arpa.veneto.it", role = c("aut", "cre"))
 Description: Some R functions it happens I use quite often.
 License: MIT + file LICENSE
 Encoding: UTF-8
