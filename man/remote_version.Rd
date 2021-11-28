@@ -13,7 +13,7 @@ remote_version(con)
 a character string with the version of the package
 }
 \description{
-get the version package in the remote repoitory of GitHub
+get the version package in the remote repository of GitHub
 }
 \examples{
 
