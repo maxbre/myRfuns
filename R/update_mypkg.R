@@ -2,7 +2,7 @@
 #'
 #' the aim of this function is to check and update the installed package
 #' with any new version on GitHub
-#' the code is quite exactly taken from https://github.com/UBESP-DCTV/imthcm 
+#' the code is quite exactly taken from https://github.com/UBESP-DCTV/imthcm
 #' (thanks for that CL!)
 #'
 #' @return invisible()
@@ -72,7 +72,7 @@ update_mypkg <- function() {
     )
 
     branch_pkg <- paste0(
-      "Which branch do you want to use to update your imthcm package?\n",
+      "Which branch do you want to use to update your package?\n",
       paste("* ", names(to_update), collapse = "\n")
     )
     opt <- c(names(to_update),
@@ -98,7 +98,7 @@ update_mypkg <- function() {
 }
 
 #' parse_version
-#' 
+#'
 #' parse the version of the installed package
 #'
 #' @param ver character string representing the version of a package
@@ -113,8 +113,8 @@ parse_version <- function(ver) {
 }
 
 #' remote_version
-#' 
-#' get the version package in the remote repoitory of GitHub
+#'
+#' get the version package in the remote repository of GitHub
 #'
 #' @param con a connection to the remote DESCRIPTION file of the package
 #' @return a character string with the version of the package
@@ -124,7 +124,7 @@ parse_version <- function(ver) {
 #'   'https://raw.githubusercontent.com/maxbre/myRfuns/main/DESCRIPTION'
 #' ) %>%
 #' myRfuns:::remote_version()
-#' 
+#'
 
 remote_version <- function(con) {
   readLines(con) %>%
