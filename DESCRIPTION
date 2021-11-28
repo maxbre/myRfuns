@@ -22,4 +22,5 @@ Imports:
     devtools,
     glue,
     purrr,
-    stringr
+    stringr,
+    tibble

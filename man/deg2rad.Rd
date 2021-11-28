@@ -13,7 +13,7 @@ deg2rad(deg)
 a numeric vector of corresponding radians
 }
 \description{
-Angle degrees to radians
+Function to convert angles degrees to radians
 }
 \examples{
 deg<- c(0, 30, 45, 60, 90, 180, 270, 360)

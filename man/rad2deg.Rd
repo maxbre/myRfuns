@@ -2,8 +2,7 @@
 % Please edit documentation in R/angle_convert.R
 \name{rad2deg}
 \alias{rad2deg}
-\title{Radians to angle degrees
-#'}
+\title{Radians to angle degrees}
 \usage{
 rad2deg(rad)
 }
@@ -14,8 +13,7 @@ rad2deg(rad)
 a numeric vector of corresponding angle degrees
 }
 \description{
-Radians to angle degrees
-#'
+function to convert radians to angle degrees
 }
 \examples{
 rad<-c(0, pi/6, pi/4, pi/3, pi/2, pi, 3/2*pi, 2*pi)
