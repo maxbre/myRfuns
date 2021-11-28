@@ -1,5 +1,7 @@
 #' Angle degrees to radians
 #'
+#' Function to convert angles degrees to radians
+#' 
 #' @param deg a numeric vector of angles degrees
 #'
 #' @return a numeric vector of corresponding radians
@@ -9,10 +11,14 @@
 #' deg<- c(0, 30, 45, 60, 90, 180, 270, 360)
 #' deg2rad(deg)
 
-deg2rad <- function(deg) {(deg * pi) / (180)}
+deg2rad <- function(deg) {deg / 180 * pi}
+
+######################################################
 
 #' Radians to angle degrees
-#' #'
+#' 
+#' function to convert radians to angle degrees
+#' 
 #' @param rad a numeric vector of radians
 #'
 #' @return a numeric vector of corresponding angle degrees
@@ -22,8 +28,91 @@ deg2rad <- function(deg) {(deg * pi) / (180)}
 #' rad<-c(0, pi/6, pi/4, pi/3, pi/2, pi, 3/2*pi, 2*pi)
 #' rad2deg(rad)
 
-rad2deg <- function(rad) {(rad * 180) / (pi)}
+rad2deg <- function(rad) {rad / pi * 180}
 
+######################################################
 
+#' Cartesian x, y to angle degrees
+#' 
+#' Function to convert Cartesian coordinates x and y to angle degrees
+#' 
+#' By approaching the problem with the use of complex numbers (strange enough but it's easier!)
+#' If z = x + i*y with real x and y
+#' r = Mod(z) = sqrt(x^2 + y^2) 
+#' phi = Arg(z)
+#' x = r * cos(phi)
+#' y = r * sin(phi)
+#' 
+#' @param x a numeric vector of x coordinates in the Cartesian plane
+#' @param y a numeric vector of y coordinates in the Cartesian plane
+#'
+#' @return a numeric vector of corresponding angle degrees (anticlockwise direction)
+#' @export
+#'
+#' @examples
+#' x <- c(1, 1, 0, -1, -1, -1,  0,  1)
+#' y <- c(0, 1, 1,  1,  0, -1, -1, -1)
+#' car2deg(x, y)
 
+car2deg <- function(x, y) {
+  z <- x + 1i * y   # complex representation
+  phi <- Arg(z)     # radians
+  deg<-rad2deg(phi) # convert radians to degrees
+  deg %% 360        # %% indicates “modulo”, i.e. integer division
+}
 
+######################################################
+
+#' Cartesian x, y to angle degrees from the North (compass direction)
+#' 
+#' Function to convert Cartesian coordinates x and y to angle degrees from the North direction, i.e. the compass direction
+#' 
+#' By approaching the problem with the use of complex numbers (strange enough but it's easier!)
+#' If z = x + i*y with real x and y
+#' r = Mod(z) = sqrt(x^2 + y^2) 
+#' phi = Arg(z)
+#' x = r * cos(phi)
+#' y = r * sin(phi)
+#' 
+#' @param x a numeric vector of x coordinates in the Cartesian plane
+#' @param y a numeric vector of y coordinates in the Cartesian plane
+#'
+#' @return a numeric vector of corresponding angle degrees direction from the North (compass direction)
+#' @export
+#'
+#' @examples
+#' x <- c(1, 1, 0, -1, -1, -1,  0,  1)
+#' y <- c(0, 1, 1,  1,  0, -1, -1, -1)
+#' car2deg_N(x, y)
+
+car2deg_N <- function(x,y) {
+  z <- x + 1i * y           # complex representation
+  phi <- Arg(z)             # radians
+  deg <- 450 - rad2deg(phi) # shifting by 90 degrees to get the North direction
+  deg %% 360                # %% indicates “modulo”, i.e. integer division
+}
+
+######################################################
+
+#' Angle degrees to Cartesian x, y coordinates
+#' 
+#' Function to convert angle degrees to Cartesian coordinates x and y
+#' It is internally also taking care of the conversion from input angles as degrees to radians
+#' 
+#' @param deg angle degrees
+#' @param r ray of the unitary circle
+#' @return a tibble with degrees, phi in radians, x and y
+#' @export
+#'
+#' @examples
+#' deg<- c(0, 30, 45, 60, 90, 180, 270, 360)
+#' deg2car(deg) 
+
+deg2car <- function(deg, r = 1) {
+  
+  phi <- deg2rad(deg)
+  x <- r * cos(phi)
+  y <- r * sin(phi)
+  
+  tibble::tibble(deg, phi, x, y)
+}
