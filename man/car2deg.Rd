@@ -15,7 +15,7 @@ car2deg(x, y)
 a numeric vector of corresponding angle degrees (anticlockwise direction)
 }
 \description{
-Function to convert Cartesian coordinates x and y to angle degrees
+Convert Cartesian coordinates x and y to angle degrees
 }
 \details{
 By approaching the problem with the use of complex numbers (strange enough but it's easier!)

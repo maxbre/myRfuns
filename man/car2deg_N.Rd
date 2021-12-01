@@ -15,7 +15,7 @@ car2deg_N(x, y)
 a numeric vector of corresponding angle degrees direction from the North (compass direction)
 }
 \description{
-Function to convert Cartesian coordinates x and y to angle degrees from the North direction, i.e. the compass direction
+Convert Cartesian coordinates x and y to angle degrees from the North direction, i.e. the compass direction
 }
 \details{
 By approaching the problem with the use of complex numbers (strange enough but it's easier!)

@@ -7,18 +7,18 @@
 deg2car(deg, r = 1)
 }
 \arguments{
-\item{deg}{angle degrees}
+\item{deg}{a numeric vector of angle degrees}
 
-\item{r}{ray of the unitary circle}
+\item{r}{numeric, ray of the unitary circle}
 }
 \value{
 a tibble with degrees, phi in radians, x and y
 }
 \description{
-Function to convert angle degrees to Cartesian coordinates x and y
+Convert angle degrees to Cartesian coordinates x and y
 It is internally also taking care of the conversion from input angles as degrees to radians
 }
 \examples{
 deg<- c(0, 30, 45, 60, 90, 180, 270, 360)
-deg2car(deg) 
+deg2car(deg)
 }

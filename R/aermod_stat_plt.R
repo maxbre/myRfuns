@@ -2,11 +2,11 @@
 #'
 #' Calculate statistics for AERMOD PLT output file
 #' 
-#' @param plt string pointing to the aermod plt file
+#' @param plt string for the aermod plt file
 #' @param x_source numeric, x coordinate of the point source (or the centre or any point of the source)
 #' @param y_source numeric, y coordinate of the point source (or the centre or any point of the source)
 #'
-#' @return a tibble with x and y coordinates, concentration values, distances from the source, compass degrees from the North for min and max statistics
+#' @return a tibble with x and y coordinates, concentration values, distances from the source, compass degrees from the North corresponding to min and max statistics
 #'
 #' @examples \dontrun{
 #' aermod_stat_plt('AERMOD.PLT', 739050, 5084550)

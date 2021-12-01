@@ -13,7 +13,7 @@ rad2deg(rad)
 a numeric vector of corresponding angle degrees
 }
 \description{
-function to convert radians to angle degrees
+Convert radians to angle degrees
 }
 \examples{
 rad<-c(0, pi/6, pi/4, pi/3, pi/2, pi, 3/2*pi, 2*pi)
