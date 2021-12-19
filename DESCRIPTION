@@ -22,4 +22,5 @@ Imports:
     glue,
     purrr,
     stringr,
-    tibble
+    tibble,
+    fs
